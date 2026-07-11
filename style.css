@@ -1,100 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Student Profile - Meghna Sri Manickam</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-<header>
-    <h1>Meghna Sri Manickam</h1>
-    <p>B.Tech Information Technology Student</p>
-</header>
+body{
+    background:#eef4ff;
+    color:#333;
+}
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#goals">Goals</a>
-    <a href="#marks">Marks</a>
-    <a href="#contact">Contact</a>
-</nav>
+header{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
 
-<section id="about" class="card">
-    <img src="profile.jpg" alt="Profile Picture" class="profile">
-    <h2>About Me</h2>
-    <p>
-        Hello! I'm Meghna Sri Manickam, a B.Tech Information Technology student at
-        Saveetha School of Engineering. I enjoy learning web development,
-        programming, and exploring new technologies.
-    </p>
-</section>
+header h1{
+    font-size:42px;
+}
 
-<section id="hobbies" class="card">
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Watching Cricket</li>
-        <li>Listening to Music</li>
-        <li>Web Designing</li>
-        <li>Reading Technology Articles</li>
-    </ul>
-</section>
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
 
-<section id="goals" class="card">
-    <h2>Academic Goals</h2>
-    <ol>
-        <li>Master HTML, CSS & JavaScript</li>
-        <li>Become a Full Stack Developer</li>
-        <li>Maintain Excellent Academic Performance</li>
-        <li>Work on Real-Time Projects</li>
-    </ol>
-</section>
+nav{
+    background:#1f2937;
+    text-align:center;
+    padding:15px;
+}
 
-<section id="marks" class="card">
-    <h2>Subject Marks</h2>
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+    transition:.3s;
+}
 
-    <table>
-        <tr>
-            <th>Subject</th>
-            <th>Marks</th>
-        </tr>
+nav a:hover{
+    color:#60a5fa;
+}
 
-        <tr>
-            <td>Mathematics</td>
-            <td>95</td>
-        </tr>
+.container{
+    width:85%;
+    margin:auto;
+    padding:20px;
+}
 
-        <tr>
-            <td>Web Technology</td>
-            <td>98</td>
-        </tr>
+.card{
+    background:white;
+    margin:25px 0;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:.3s;
+}
 
-        <tr>
-            <td>Python</td>
-            <td>94</td>
-        </tr>
+.card:hover{
+    transform:translateY(-5px);
+}
 
-        <tr>
-            <td>DBMS</td>
-            <td>96</td>
-        </tr>
+.profile{
+    display:block;
+    margin:auto;
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #4f46e5;
+}
 
-        <tr>
-            <td>Computer Networks</td>
-            <td>93</td>
-        </tr>
-    </table>
-</section>
+h2{
+    color:#4f46e5;
+    margin:20px 0;
+}
 
-<section id="contact" class="card">
-    <h2>Contact</h2>
-    <p>Email: meghna@example.com</p>
-    <p>Phone: +91 XXXXX XXXXX</p>
-</section>
+p{
+    line-height:1.8;
+}
 
-<footer>
-    <p>© 2026 Meghna Sri Manickam | Student Profile</p>
-</footer>
+ul,ol{
+    margin-left:25px;
+    line-height:2;
+}
 
-</body>
-</html>
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#4f46e5;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
