@@ -1,172 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile | Meghna Sri Manickam</title>
     <link rel="stylesheet" href="style.css">
-    <title>Student Profile</title>
-
-    <style>
-
-        body{
-            background-color:#e8f5ff;
-            font-family:Arial, sans-serif;
-            margin:30px;
-        }
-
-        h1{
-            color:darkblue;
-            text-align:center;
-        }
-
-        h2{
-            color:#00695c;
-        }
-
-        .box{
-            background-color:white;
-            padding:20px;
-            border-radius:10px;
-            border:2px solid lightblue;
-        }
-
-        table{
-            width:70%;
-            border-collapse:collapse;
-        }
-
-        table, th, td{
-            border:1px solid black;
-        }
-
-        th{
-            background-color:#4fc3f7;
-            color:white;
-        }
-
-        td, th{
-            padding:10px;
-            text-align:center;
-        }
-
-        img{
-            border:3px solid #1565c0;
-            border-radius:10px;
-        }
-
-        a{
-            color:blue;
-            text-decoration:none;
-            font-weight:bold;
-        }
-
-        a:hover{
-            color:red;
-        }
-
-        footer{
-            text-align:center;
-            margin-top:20px;
-            color:gray;
-        }
-
-    </style>
-
 </head>
 
 <body>
 
-<div class="box">
+<header>
+    <h1>Meghna Sri Manickam</h1>
+    <p>B.Tech Information Technology Student</p>
+</header>
 
-<h1>Meghna Sri Manickam</h1>
+<nav>
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#goals">Goals</a>
+    <a href="#marks">Marks</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<marquee>✨ Welcome to My Student Profile ✨</marquee>
+<div class="container">
+
+<section id="about" class="card">
+
+<img src="meghna.jpg" alt="My Photo" class="profile">
 
 <h2>About Me</h2>
 
 <p>
-Hello! My name is <b>Meghna Sri Manickam</b>. I am pursuing
+Hello! I am <b>Meghna Sri Manickam</b>, pursuing
 <b>B.Tech Information Technology</b> at
 Saveetha Institute of Medical and Technical Sciences.
 I enjoy coding, web development, learning new technologies,
-and watching cricket.
+watching cricket and exploring new technologies.
 </p>
+
+</section>
+
+<section id="hobbies" class="card">
 
 <h2>My Hobbies</h2>
 
 <ul>
-    <li>Watching Cricket 🏏</li>
-    <li>Coding 💻</li>
-    <li>Listening to Music 🎵</li>
-    <li>Reading Books 📚</li>
+<li>🏏 Watching Cricket</li>
+<li>💻 Coding</li>
+<li>🎵 Listening to Music</li>
+<li>📚 Reading Books</li>
 </ul>
+
+</section>
+
+<section id="goals" class="card">
 
 <h2>Academic Goals</h2>
 
 <ol>
-    <li>Score excellent grades in every semester.</li>
-    <li>Become a Full Stack Developer.</li>
-    <li>Improve my programming skills.</li>
-    <li>Get placed in a reputed IT company.</li>
+<li>Score excellent grades every semester.</li>
+<li>Become a Full Stack Developer.</li>
+<li>Improve Programming Skills.</li>
+<li>Get placed in a reputed IT company.</li>
 </ol>
 
-<h2>Subject Marks (Grades)</h2>
+</section>
+
+<section id="marks" class="card">
+
+<h2>Subject Grades</h2>
 
 <table>
 
 <tr>
-    <th>Subject</th>
-    <th>Grade</th>
+<th>Subject</th>
+<th>Grade</th>
 </tr>
 
 <tr>
-    <td>Object Oriented Programming with C++</td>
-    <td>S</td>
+<td>Object Oriented Programming with C++</td>
+<td>S</td>
 </tr>
 
 <tr>
-    <td>Numerical Methods</td>
-    <td>A</td>
+<td>Numerical Methods</td>
+<td>A</td>
 </tr>
 
 <tr>
-    <td>Data Structures</td>
-    <td>A</td>
+<td>Data Structures</td>
+<td>A</td>
 </tr>
 
 <tr>
-    <td>Operating Systems</td>
-    <td>A</td>
+<td>Operating Systems</td>
+<td>A</td>
 </tr>
 
 <tr>
-    <td>Database Management Systems</td>
-    <td>S</td>
+<td>Database Management Systems</td>
+<td>S</td>
 </tr>
 
 <tr>
-    <td>Computer Networks</td>
-    <td>A</td>
+<td>Computer Networks</td>
+<td>A</td>
 </tr>
 
 <tr>
-    <td>C Programming</td>
-    <td>S</td>
+<td>C Programming</td>
+<td>S</td>
 </tr>
 
 <tr>
-    <td>Professional Ethics and Legal Practices</td>
-    <td>S</td>
+<td>Professional Ethics and Legal Practices</td>
+<td>S</td>
 </tr>
 
 </table>
 
-<h2>My Photo</h2>
+</section>
 
-<img src="meghna.jpg"
-     alt="My Photo"
-     width="200"
-     height="250">
+<section id="contact" class="card">
 
-<h2>College Website</h2>
+<h2>Contact Me</h2>
+
+<p><strong>Email:</strong> meghnasrim@gmail.com</p>
 
 <p>
 <a href="https://www.saveetha.com" target="_blank">
@@ -174,19 +134,16 @@ Visit Saveetha Institute of Medical and Technical Sciences
 </a>
 </p>
 
-<h2>Contact Details</h2>
-
-<p><b>Email:</b> meghnasrim@gmail.com</p>
+</section>
 
 </div>
 
 <footer>
-
-<hr>
 
 <p>© 2026 Meghna Sri Manickam | Student Profile</p>
 
 </footer>
 
 </body>
+
 </html>
